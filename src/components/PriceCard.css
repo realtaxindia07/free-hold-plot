@@ -1,0 +1,14 @@
+.price-card{
+    padding: 30px;
+    max-width: 300px;
+    box-shadow: 10px 10px 10px 3px rgba(0, 0, 0, 0.164);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgba(177, 142, 78, 0.09);
+}
+.price-card hr {
+  border: 1px dotted black;
+}
+
