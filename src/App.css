@@ -1,5 +1,5 @@
 
- .main {
+.main {
   position: relative;
 }
 button {
@@ -52,7 +52,7 @@ button:hover {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: url("/home.png") no-repeat;
+  background: url("/home.webp") no-repeat;
   background-size: cover;
   margin-bottom: 100px;
 }
@@ -85,24 +85,76 @@ button:hover {
   border-radius: 10px;
 }
 
-.amenities {
+.gallery {
   text-align: center;
   margin-bottom: 100px;
 }
 
-.amenities > div {
+.gallery > div {
   padding: 30px;
   display: grid;
   gap: 16px;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 
-.amenities-a img {
+.gallery-a img {
   border-radius: 100px;
   width: 100%;
   height: auto;
 }
 
+.amenities{
+  text-align: center;
+  padding: 30px;
+  margin-bottom: 100px;
+}
+.amenities-a{
+  margin-top: 50px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
+}
+.amenities-a picture{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgb(209, 207, 207);
+  padding: 10px;
+}
+.amenities-a picture:hover{
+  scale: 1.02;
+  box-shadow: inset 0 0 10px #cbcbcb;
+}
+.amenities-a img{
+  width: 70%;
+}
+.project{
+  text-align: center;
+  padding: 30px;
+  margin-bottom: 100px;
+}
+.project-a{
+  margin-top: 50px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
+}
+.project-a picture{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgb(209, 207, 207);
+  padding: 10px;
+}
+.project-a picture:hover{
+  scale: 1.02;
+  box-shadow: inset 0 0 10px #cbcbcb;
+}
+.project-a img{
+  width: 70%;
+}
 .price {
   text-align: center;
   padding: 30px;
@@ -161,7 +213,7 @@ button:hover {
 .floor-plans div article {
   width: 300px;
   height: 200px;
-  background: url("/home.png") no-repeat;
+  background: url("/home.webp") no-repeat;
   border-radius: 10px;
   background-size: cover;
 }

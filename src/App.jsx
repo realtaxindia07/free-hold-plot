@@ -28,7 +28,7 @@ function App() {
             <li>Secure Investment in Noida</li>
             <li>Wide Range of Properties</li>
             <li>Vibrant & Growing Locality</li>
-            <li>Exclusive Amenities</li>
+            <li>Exclusive gallery</li>
           </ul>
         </article>
         <article id="home-b" className="home-b">
@@ -44,34 +44,132 @@ function App() {
           <button onClick={() => setPopupActive(true)}>Download Brochure</button>
         </article>
         <aside>
-          <img src="/home2.png" alt="Premium Real Estate in Noida" />
+          <img loading="lazy"  src="/home2.webp" alt="Premium Real Estate in Noida" />
         </aside>
       </section>
 
-      <section id="amenities" className="amenities">
+      <section className='amenities'id='amenities'>
         <h3><i>Amenities</i></h3>
-        <h2>Amenities for a Luxurious Living</h2>
+        <h2>Amenities that Define Excellence</h2>
         <div className="amenities-a">
-          <img src="/div3image1.png" alt="24/7 Security" />
-          <img src="/div3image2.png" alt="Swimming Pool" />
-          <img src="/div3image3.png" alt="Gym & Spa" />
-          <img src="/div3image4.png" alt="Kids Play Area" />
+          <picture>
+          <img loading="lazy"  src="/Amenities/3+.webp" alt="24/7 Security" />
+          <p>Four-lane Road from the ORR</p>
+          </picture>
+          <picture>
+          <img loading="lazy"  src="/Amenities/80feet.webp" alt="Swimming Pool" />
+          <p>Bordering an 80-Feet Road</p>
+          </picture>
+          <picture>
+          <img loading="lazy"  src="/Amenities/arch.webp" alt="Gym & Spa" />
+          <p>Entry Arch</p>
+          </picture>
+          <picture>
+          <img loading="lazy"  src="/Amenities/asphalt.webp" alt="Kids Play Area" />
+          <p>Asphalt Roads</p>
+          </picture>
+          <picture>
+          <img loading="lazy"  src="/Amenities/filmcity.webp" alt="Kids Play Area" />
+          <p>Film City</p>
+          </picture>
+          <picture>
+          <img loading="lazy"  src="/Amenities/sewer.webp" alt="Swimming Pool" />
+          <p>Sewer System</p>
+          </picture>
+          <picture>
+          <img loading="lazy"  src="/Amenities/street.webp" alt="24/7 Security" />
+          <p>Street Lamps</p>
+          </picture>
+          <picture>
+          <img loading="lazy"  src="/Amenities/underground.webp" alt="24/7 Security" />
+          <p>Underground Electrical Cabling</p>
+          </picture>
+          <picture>
+          <img loading="lazy"  src="/Amenities/vasu.webp" alt="24/7 Security" />
+          Fully Vaasthu Compliant
+          </picture>
+          <picture>
+          <img loading="lazy"  src="/Amenities/water-supply.webp" alt="24/7 Security" />
+          <p>Water Supply Hookup</p>
+          </picture>
+          <picture>
+          <img loading="lazy"  src="/Amenities/water.webp" alt="24/7 Security" />
+          <p>Elevated Water Tank</p>
+          </picture>
+          <picture>
+          <img loading="lazy"  src="/Amenities/garden.webp" alt="Gym & Spa" />
+          <p>Landscaped Gardens</p>
+          </picture>
         </div>
       </section>
 
       <section id="price" className="price">
-        <h3><i>Price & Offers</i></h3>
-        <h2>Exclusive Pricing for Prime Locations</h2>
+        <h3><i>Price Section</i></h3>
+        <h2>Unlock the Gateway to Business Excellence</h2>
         <div>
-          <PriceCard price={100} area={100} func={setPopupActive}/>
-          <PriceCard price={150} area={150} func={setPopupActive}/>
-          <PriceCard price={200} area={200} func={setPopupActive}/>
+          <PriceCard price={25} area={100} h3={"Lacs* Onwards"} func={setPopupActive}/>
+          <PriceCard area={150} h3={"on request"} func={setPopupActive}/>
+          <PriceCard area={200} h3={"on request"} func={setPopupActive}/>
+        </div>
+      </section>
+      
+      <section id="gallery" className="gallery">
+        <h3><i>Gallery</i></h3>
+        <h2>Gallery for a Luxurious Living</h2>
+        <div className="gallery-a">
+          <img loading="lazy"  src="/gallery/div3image1.webp" alt="24/7 Security" />
+          <img loading="lazy"  src="/gallery/div3image2.webp" alt="Swimming Pool" />
+          <img loading="lazy"  src="/gallery/div3image3.webp" alt="Gym & Spa" />
+          <img loading="lazy"  src="/gallery/div3image4.webp" alt="Kids Play Area" />
+          <img loading="lazy"  src="/gallery/div3image4.webp" alt="Kids Play Area" />
+          <img loading="lazy"  src="/gallery/div3image3.webp" alt="Gym & Spa" />
+          <img loading="lazy"  src="/gallery/div3image2.webp" alt="Swimming Pool" />
+          <img loading="lazy"  src="/gallery/div3image1.webp" alt="24/7 Security" />
+        </div>
+      </section>
+
+      <section className='project'id='project'>
+        <h3><i>Our Amenities</i></h3>
+        <h2>Project Highlights</h2>
+        <div className="project-a">
+          <picture>
+          <img loading="lazy"  src="/project/cctv.webp" alt="24/7 Security" />
+          <p>Four-lane Road from the ORR</p>
+          </picture>
+          <picture>
+          <img loading="lazy"  src="/project/grated.webp" alt="Swimming Pool" />
+          <p>Bordering an 80-Feet Road</p>
+          </picture>
+          <picture>
+          <img loading="lazy"  src="/project/land.webp" alt="Gym & Spa" />
+          <p>Entry Arch</p>
+          </picture>
+          <picture>
+          <img loading="lazy"  src="/project/loan.webp" alt="Kids Play Area" />
+          <p>Asphalt Roads</p>
+          </picture>
+          <picture>
+          <img loading="lazy"  src="/project/paid.webp" alt="Kids Play Area" />
+          <p>Film City</p>
+          </picture>
+          <picture>
+          <img loading="lazy"  src="/project/park.webp" alt="Swimming Pool" />
+          <p>Sewer System</p>
+          </picture>
+          <picture>
+          <img loading="lazy"  src="/project/plan.webp" alt="24/7 Security" />
+          <p>Street Lamps</p>
+          </picture>
+          <picture>
+          <img loading="lazy"  src="/project/water-supply.webp" alt="24/7 Security" />
+          <p>Underground Electrical Cabling</p>
+          </picture>
         </div>
       </section>
 
       <section className="highlights" id="highlights">
         <aside>
-          <img src="/home2.png" alt="Residential Plots in Noida" />
+          <img loading="lazy"  src="/home2.webp" alt="Residential Plots in Noida" />
         </aside>
         <article>
           <h3><i>Location Benefits</i></h3>
@@ -113,7 +211,7 @@ function App() {
           </ul>
         </article>
         <aside>
-          <img src="/location.png" alt="Noida Location Map" />
+          <img loading="lazy"  src="/location.webp" alt="Noida Location Map" />
         </aside>
       </section>
 
