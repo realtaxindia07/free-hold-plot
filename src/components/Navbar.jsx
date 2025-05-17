@@ -8,7 +8,7 @@ export default function Navbar() {
   return (
     <nav className="nav-container">
       <div className="nav-container-div1">
-        <img src="/logo.png" alt="Company Logo - Knowledge Park" />
+        <img src="/logo.webp" alt="Company Logo - Knowledge Park" />
         <button
           className="hamburger"
           onClick={() => setMenuOpen(!menuOpen)}

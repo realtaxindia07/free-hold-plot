@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://free-hold-plot.netlify.app/sitemap.xml
