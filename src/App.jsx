@@ -7,28 +7,36 @@ import PriceCard from './components/PriceCard';
 
 function App() {
   const [popupActive, setPopupActive] = useState(false);
-
+  const [isdownload, setIsdownload] = useState(false);
+  const Download_Brochure = () => {
+    setPopupActive(false);
+    isdownload && window.open("https://drive.usercontent.google.com/u/0/uc?id=1TwR5p7VteCVRzfjF0m6JT2C9f39Ao5Qi&export=download");
+    setIsdownload(false)
+  };
   return (
     <main className="main">
       <Navbar />
       {popupActive && (
-                      <section className="popup" id="popup">
-                      <Form />
-                      <button className="cross" onClick={() => setPopupActive(false)}>X</button>
-                      </section>
-)}
+        <section className="popup" id="popup">
+          <div className='popup-div'>
+          <Form Download_Brochure={Download_Brochure}/>
+          <button className="cross" 
+          onClick={() => {setPopupActive(false)}}>X</button>
+          </div>
+        </section>
+      )}
 
 
       <section id="home" className="home">
         <article id="home-a" className="home-a">
-          <h3><i>Prime Real Estate in Noida</i></h3>
-          <h1>Premium Properties for Sale in Noida</h1>
+          <h3><i>Pari Chowk || Chi Phi</i></h3>
+          <h1>Freehold plot</h1>
           <ul>
-            <li>High Return on Investment</li>
-            <li>Secure Investment in Noida</li>
-            <li>Wide Range of Properties</li>
-            <li>Vibrant & Growing Locality</li>
-            <li>Exclusive gallery</li>
+            <li>Loan Approved</li>
+            <li>Gated Society</li>
+            <li>Prime Location</li>
+            <li>Free Flood zone Plot</li>
+            <li>Premium Amenities</li>
           </ul>
         </article>
         <article id="home-b" className="home-b">
@@ -38,67 +46,68 @@ function App() {
 
       <section id="overview" className="overview">
         <article>
-          <h3><i>About the Project</i></h3>
-          <h2>Explore Prime Plots in Knowledge Park, Noida</h2>
-          <p>Discover a rare opportunity to own premium residential plots located in the heart of Noida's fast-developing Knowledge Park. Our real estate offerings are strategically located with close proximity to commercial hubs, top universities, and upcoming infrastructure developments. Secure your plot today for a promising future!</p>
-          <button onClick={() => setPopupActive(true)}>Download Brochure</button>
+          <h3><i>About us</i></h3>
+          <h2>Freehold plot</h2>
+          <p>Pari Chowk || Greater Noida <br /> Discover Surya Homes – a remarkable opportunity to own premium freehold residential plots, strategically located just behind Galgotias University on the Yamuna Expressway. Positioned directly across from the iconic F-1 race track, these plots lie in the heart of Greater Noida’s rapidly growing residential and commercial corridor. With major developments such as the upcoming Film City and Jewar International Airport nearby, Surya Homes is poised to benefit from the region’s transformation, making it a prime choice for both living and investment in the evolving Delhi-NCR landscape.</p>
+          <button onClick={() => {setPopupActive(true);setIsdownload(true)}}>Download Brochure</button>
         </article>
-        <aside>
-          <img loading="lazy"  src="/home2.webp" alt="Premium Real Estate in Noida" />
+        <aside className="overview-img">
+          <img loading="lazy" src="https://suryaahomes.in/images/How-to-sell-a-plot-F.jpg" alt="Premium Real Estate in Noida" className='img1' />
+          <img loading="lazy" src="https://suryaahomes.in/images/mainn.png" alt="Premium Real Estate in Noida" className='img2' />
         </aside>
       </section>
 
-      <section className='amenities'id='amenities'>
+      <section className='amenities' id='amenities'>
         <h3><i>Amenities</i></h3>
         <h2>Amenities that Define Excellence</h2>
         <div className="amenities-a">
           <picture>
-          <img loading="lazy"  src="/Amenities/3+.webp" alt="24/7 Security" />
-          <p>Four-lane Road from the ORR</p>
+            <img loading="lazy" src="/Amenities/3+.webp" alt="24/7 Security" />
+            <p>Four-lane Road from the ORR</p>
           </picture>
           <picture>
-          <img loading="lazy"  src="/Amenities/80feet.webp" alt="Swimming Pool" />
-          <p>Bordering an 80-Feet Road</p>
+            <img loading="lazy" src="/Amenities/80feet.webp" alt="Swimming Pool" />
+            <p>Bordering an 80-Feet Road</p>
           </picture>
           <picture>
-          <img loading="lazy"  src="/Amenities/arch.webp" alt="Gym & Spa" />
-          <p>Entry Arch</p>
+            <img loading="lazy" src="/Amenities/arch.webp" alt="Gym & Spa" />
+            <p>Entry Arch</p>
           </picture>
           <picture>
-          <img loading="lazy"  src="/Amenities/asphalt.webp" alt="Kids Play Area" />
-          <p>Asphalt Roads</p>
+            <img loading="lazy" src="/Amenities/asphalt.webp" alt="Kids Play Area" />
+            <p>Asphalt Roads</p>
           </picture>
           <picture>
-          <img loading="lazy"  src="/Amenities/filmcity.webp" alt="Kids Play Area" />
-          <p>Film City</p>
+            <img loading="lazy" src="/Amenities/filmcity.webp" alt="Kids Play Area" />
+            <p>Film City</p>
           </picture>
           <picture>
-          <img loading="lazy"  src="/Amenities/sewer.webp" alt="Swimming Pool" />
-          <p>Sewer System</p>
+            <img loading="lazy" src="/Amenities/sewer.webp" alt="Swimming Pool" />
+            <p>Sewer System</p>
           </picture>
           <picture>
-          <img loading="lazy"  src="/Amenities/street.webp" alt="24/7 Security" />
-          <p>Street Lamps</p>
+            <img loading="lazy" src="/Amenities/street.webp" alt="24/7 Security" />
+            <p>Street Lamps</p>
           </picture>
           <picture>
-          <img loading="lazy"  src="/Amenities/underground.webp" alt="24/7 Security" />
-          <p>Underground Electrical Cabling</p>
+            <img loading="lazy" src="/Amenities/underground.webp" alt="24/7 Security" />
+            <p>Underground Electrical Cabling</p>
           </picture>
           <picture>
-          <img loading="lazy"  src="/Amenities/vasu.webp" alt="24/7 Security" />
-          Fully Vaasthu Compliant
+            <img loading="lazy" src="/Amenities/vasu.webp" alt="24/7 Security" />
+            Fully Vaasthu Compliant
           </picture>
           <picture>
-          <img loading="lazy"  src="/Amenities/water-supply.webp" alt="24/7 Security" />
-          <p>Water Supply Hookup</p>
+            <img loading="lazy" src="/Amenities/water-supply.webp" alt="24/7 Security" />
+            <p>Water Supply Hookup</p>
           </picture>
           <picture>
-          <img loading="lazy"  src="/Amenities/water.webp" alt="24/7 Security" />
-          <p>Elevated Water Tank</p>
+            <img loading="lazy" src="/Amenities/water.webp" alt="24/7 Security" />
+            <p>Elevated Water Tank</p>
           </picture>
           <picture>
-          <img loading="lazy"  src="/Amenities/garden.webp" alt="Gym & Spa" />
-          <p>Landscaped Gardens</p>
+            <img loading="lazy" src="/Amenities/garden.webp" alt="Gym & Spa" />
+            <p>Landscaped Gardens</p>
           </picture>
         </div>
       </section>
@@ -107,79 +116,118 @@ function App() {
         <h3><i>Price Section</i></h3>
         <h2>Unlock the Gateway to Business Excellence</h2>
         <div>
-          <PriceCard price={25} area={100} h3={"Lacs* Onwards"} func={setPopupActive}/>
-          <PriceCard area={150} h3={"on request"} func={setPopupActive}/>
-          <PriceCard area={200} h3={"on request"} func={setPopupActive}/>
+          <PriceCard price={25} area={100} h3={"Lacs* Onwards"} func={setPopupActive} />
+          <PriceCard area={150} h3={"on request"} func={setPopupActive} />
+          <PriceCard area={200} h3={"on request"} func={setPopupActive} />
         </div>
       </section>
-      
+
       <section id="gallery" className="gallery">
         <h3><i>Gallery</i></h3>
         <h2>Gallery for a Luxurious Living</h2>
         <div className="gallery-a">
-          <img loading="lazy"  src="/gallery/div3image1.webp" alt="24/7 Security" />
-          <img loading="lazy"  src="/gallery/div3image2.webp" alt="Swimming Pool" />
-          <img loading="lazy"  src="/gallery/div3image3.webp" alt="Gym & Spa" />
-          <img loading="lazy"  src="/gallery/div3image4.webp" alt="Kids Play Area" />
-          <img loading="lazy"  src="/gallery/div3image4.webp" alt="Kids Play Area" />
-          <img loading="lazy"  src="/gallery/div3image3.webp" alt="Gym & Spa" />
-          <img loading="lazy"  src="/gallery/div3image2.webp" alt="Swimming Pool" />
-          <img loading="lazy"  src="/gallery/div3image1.webp" alt="24/7 Security" />
+          <div>
+            <img loading="lazy" src="https://suryaahomes.in/images/yamuna.jpg" alt="24/7 Security" />
+            <p>Yamuna Expressway 2 min</p>
+          </div>
+          <div>
+            <img loading="lazy" src="https://suryaahomes.in/images/metro.jpg" alt="Swimming Pool" />
+            <p>Metro Station 2 min</p>
+          </div>
+          <div>
+            <img loading="lazy" src="https://suryaahomes.in/images/airport.jpg" alt="Gym & Spa" />
+            <p>Jewar Aiport
+
+              30 min</p>
+          </div>
+          <div>
+            <img loading="lazy" src="https://suryaahomes.in/images/TECH.jpg" alt="Kids Play Area" />
+            <p>Tech Zone
+
+              15 min</p>
+          </div>
+          <div>
+            <img loading="lazy" src="https://suryaahomes.in/images/mall.jpg" alt="Kids Play Area" />
+            <p>Grand Venice
+
+              Mall- 5 min</p>
+          </div>
+          <div>
+            <img loading="lazy" src="https://suryaahomes.in/images/sharda.png" alt="Gym & Spa" />
+            <p>Sharda University
+
+              8 min</p>
+          </div>
+          <div>
+            <img loading="lazy" src="https://suryaahomes.in/images/bajaj.jpeg" alt="Swimming Pool" />
+            <p>GL Bajaj Institude
+
+              10 min</p>
+          </div>
+          <div>
+            <img loading="lazy" src="https://suryaahomes.in/images/gal.jpeg" alt="24/7 Security" />
+            <p>Galgotias College
+
+              8 min</p>
+          </div>
         </div>
       </section>
 
-      <section className='project'id='project'>
+      <section className='project' id='project'>
         <h3><i>Our Amenities</i></h3>
         <h2>Project Highlights</h2>
         <div className="project-a">
           <picture>
-          <img loading="lazy"  src="/project/cctv.webp" alt="24/7 Security" />
-          <p>Four-lane Road from the ORR</p>
+            <img loading="lazy" src="/project/cctv.webp" alt="24/7 Security" />
+            <p>Four-lane Road from the ORR</p>
           </picture>
           <picture>
-          <img loading="lazy"  src="/project/grated.webp" alt="Swimming Pool" />
-          <p>Bordering an 80-Feet Road</p>
+            <img loading="lazy" src="/project/grated.webp" alt="Swimming Pool" />
+            <p>Bordering an 80-Feet Road</p>
           </picture>
           <picture>
-          <img loading="lazy"  src="/project/land.webp" alt="Gym & Spa" />
-          <p>Entry Arch</p>
+            <img loading="lazy" src="/project/land.webp" alt="Gym & Spa" />
+            <p>Entry Arch</p>
           </picture>
           <picture>
-          <img loading="lazy"  src="/project/loan.webp" alt="Kids Play Area" />
-          <p>Asphalt Roads</p>
+            <img loading="lazy" src="/project/loan.webp" alt="Kids Play Area" />
+            <p>Asphalt Roads</p>
           </picture>
           <picture>
-          <img loading="lazy"  src="/project/paid.webp" alt="Kids Play Area" />
-          <p>Film City</p>
+            <img loading="lazy" src="/project/paid.webp" alt="Kids Play Area" />
+            <p>Film City</p>
           </picture>
           <picture>
-          <img loading="lazy"  src="/project/park.webp" alt="Swimming Pool" />
-          <p>Sewer System</p>
+            <img loading="lazy" src="/project/park.webp" alt="Swimming Pool" />
+            <p>Sewer System</p>
           </picture>
           <picture>
-          <img loading="lazy"  src="/project/plan.webp" alt="24/7 Security" />
-          <p>Street Lamps</p>
+            <img loading="lazy" src="/project/plan.webp" alt="24/7 Security" />
+            <p>Street Lamps</p>
           </picture>
           <picture>
-          <img loading="lazy"  src="/project/water-supply.webp" alt="24/7 Security" />
-          <p>Underground Electrical Cabling</p>
+            <img loading="lazy" src="/project/water-supply.webp" alt="24/7 Security" />
+            <p>Underground Electrical Cabling</p>
           </picture>
         </div>
       </section>
 
       <section className="highlights" id="highlights">
         <aside>
-          <img loading="lazy"  src="/home2.webp" alt="Residential Plots in Noida" />
+          <img loading="lazy" src="https://suryaahomes.in/images/map.png" alt="Residential Plots in Noida" />
         </aside>
         <article>
-          <h3><i>Location Benefits</i></h3>
-          <h2>Why Choose Noida for Your Dream Property</h2>
+          <h3><i>Location Advantages</i></h3>
+          <h2>Discover Your Perfect Place in the Perfect Location</h2>
           <ul>
-            <li>Proximity to Major IT Hubs and Corporate Offices</li>
-            <li>Excellent Connectivity via Metro and Highways</li>
-            <li>Close to Leading Educational Institutions and Hospitals</li>
-            <li>Upcoming Infrastructure Projects Promising High Returns</li>
-            <li>Vibrant Neighborhood with a Strong Community</li>
+            <li>Yamuna Expressway – 3 mins</li>
+            <li>Knowledge Park 2 Metro Station – 10 mins</li>
+            <li>Express Park View Apartments – 2 mins</li>
+            <li>Nimbus Residential Apartment – 10 mins</li>
+            <li>Hospitals – 5 mins</li>
+            <li>Venice Mall – 10 mins</li>
+            <li>Jewar Airport – 35 mins</li>
+            <li>Pari Chowk – 10 mins</li>
           </ul>
         </article>
       </section>
@@ -189,18 +237,25 @@ function App() {
         <h2>Customize Your Dream Property</h2>
         <div>
           <article>
+            <div>
             <h3><i>Plot Plan 1</i></h3>
-            <h3><i>Standard Layout</i></h3>
+            <button onClick={() => setPopupActive(true)}>Standard Layout</button>
+            </div>
           </article>
           <article>
+            <div>
             <h3><i>Plot Plan 2</i></h3>
-            <h3><i>Premium Layout</i></h3>
+            <button onClick={() => setPopupActive(true)}>Premium Layout</button>
+            </div>
           </article>
         </div>
       </section>
 
       <section className="location" id="location">
-        <article>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/JgDNFQ2RaLQ?autoplay=1&mute=1" frameborder="0" allow="autoplay; encrypted-media" loading="lazy"allowFullScreen></iframe>
+             
+
+        {/* <article>
           <h3><i>Location Highlights</i></h3>
           <h2>Discover the Ideal Location for Your Property</h2>
           <ul>
@@ -211,8 +266,8 @@ function App() {
           </ul>
         </article>
         <aside>
-          <img loading="lazy"  src="/location.webp" alt="Noida Location Map" />
-        </aside>
+          <img loading="lazy" src="/location.webp" alt="Noida Location Map" />
+        </aside> */}
       </section>
 
       <section className="contact" id="contact">
