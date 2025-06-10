@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from "axios"
 import './Form.css';
 
-export default function Form() {
+export default function Form({Download_Brochure}) {
   const [form, setForm] = useState({ name: '', phone: '', email: '', message: '', consent: true });
   const [errors, setErrors] = useState({});
 
@@ -43,7 +43,8 @@ const handleSubmit = async (e) => {
   }
 
   try {
-    await axios.post("http://localhost:5000", form);
+    // await axios.post("http://localhost:5000", form);
+    Download_Brochure && Download_Brochure();
     alert("Form submitted successfully!");
     
     // Reset form and errors only on successful submission
