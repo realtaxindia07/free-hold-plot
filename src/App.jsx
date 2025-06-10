@@ -54,8 +54,8 @@ function App() {
           <button onClick={() => {setPopupActive(true);setIsdownload(true)}}>Download Brochure</button>
         </article>
         <aside className="overview-img">
-          <img loading="lazy" src="https://suryaahomes.in/images/How-to-sell-a-plot-F.jpg" alt="Premium Real Estate in Noida" className='img1' />
-          <img loading="lazy" src="https://suryaahomes.in/images/mainn.png" alt="Premium Real Estate in Noida" className='img2' />
+          <img loading="lazy" src="home2.webp" alt="Premium Real Estate in Noida" className='img1' />
+          <img loading="lazy" src="home.webp" alt="Premium Real Estate in Noida" className='img2' />
         </aside>
       </section>
 
@@ -97,7 +97,7 @@ function App() {
           </picture>
           <picture>
             <img loading="lazy" src="/Amenities/vasu.webp" alt="24/7 Security" />
-            Fully Vaasthu Compliant
+            <p>Fully Vaasthu Compliant</p>
           </picture>
           <picture>
             <img loading="lazy" src="/Amenities/water-supply.webp" alt="24/7 Security" />
@@ -129,45 +129,45 @@ function App() {
         <h2>Gallery for a Luxurious Living</h2>
         <div className="gallery-a">
           <div>
-            <img loading="lazy" src="https://suryaahomes.in/images/yamuna.jpg" alt="24/7 Security" />
+            <img loading="lazy" src="gallery/yamuna.webp" alt="yamuna" />
             <p>Yamuna Expressway 2 min</p>
           </div>
           <div>
-            <img loading="lazy" src="https://suryaahomes.in/images/metro.jpg" alt="Swimming Pool" />
+            <img loading="lazy" src="gallery/metro.webp" alt="metro" />
             <p>Metro Station 2 min</p>
           </div>
           <div>
-            <img loading="lazy" src="https://suryaahomes.in/images/airport.jpg" alt="Gym & Spa" />
+            <img loading="lazy" src="gallery/airport.webp" alt="airport" />
             <p>Jewar Aiport
 
               30 min</p>
           </div>
           <div>
-            <img loading="lazy" src="https://suryaahomes.in/images/TECH.jpg" alt="Kids Play Area" />
+            <img loading="lazy" src="gallery/TECH.webp" alt="TECH" />
             <p>Tech Zone
 
               15 min</p>
           </div>
           <div>
-            <img loading="lazy" src="https://suryaahomes.in/images/mall.jpg" alt="Kids Play Area" />
+            <img loading="lazy" src="gallery/mall.webp" alt="mall" />
             <p>Grand Venice
 
               Mall- 5 min</p>
           </div>
           <div>
-            <img loading="lazy" src="https://suryaahomes.in/images/sharda.png" alt="Gym & Spa" />
+            <img loading="lazy" src="gallery/sharda.webp" alt="sharda" />
             <p>Sharda University
 
               8 min</p>
           </div>
           <div>
-            <img loading="lazy" src="https://suryaahomes.in/images/bajaj.jpeg" alt="Swimming Pool" />
+            <img loading="lazy" src="gallery/bajaj.webp" alt="bajaj" />
             <p>GL Bajaj Institude
 
               10 min</p>
           </div>
           <div>
-            <img loading="lazy" src="https://suryaahomes.in/images/gal.jpeg" alt="24/7 Security" />
+            <img loading="lazy" src="gallery/gal.webp" alt="galgotias" />
             <p>Galgotias College
 
               8 min</p>
@@ -216,7 +216,7 @@ function App() {
 
       <section className="highlights" id="highlights">
         <aside>
-          <img loading="lazy" src="https://suryaahomes.in/images/map.png" alt="Residential Plots in Noida" />
+          <img loading="lazy" src="map.webp" alt="Residential Plots in Noida" />
         </aside>
         <article>
           <h3><i>Location Advantages</i></h3>
@@ -252,44 +252,15 @@ function App() {
           </article>
         </div>
       </section>
-
-      <section className="location" id="location">
-            <iframe
-        // width="560"
-        // height="315"
-        src="https://www.youtube.com/embed/JgDNFQ2RaLQ?autoplay=0&mute=1"
-        title="YouTube video player"
-        frameBorder="0"
-        allow="autoplay; encrypted-media"
-        loading="lazy"
-        allowFullScreen
-      ></iframe>
-        <iframe
-        title="Google Map"
-        src={ `https://www.google.com/maps?q=${lat},${lng}&z=15&output=embed`}
-        // width="90%"
-        // height="100%"
-        // style={{ border: 0 }}
-        allowFullScreen=""
-        loading="lazy"
-        referrerPolicy="no-referrer-when-downgrade"
-      ></iframe>
-
-
-        {/* <article>
-          <h3><i>Location Highlights</i></h3>
-          <h2>Discover the Ideal Location for Your Property</h2>
-          <ul>
-            <li>1 min from Noida-Greater Noida Expressway</li>
-            <li>5 mins to Sector 18 Commercial Hub</li>
-            <li>10 mins to DND Flyover</li>
-            <li>15 mins to Sector 32 Metro Station</li>
-          </ul>
-        </article>
-        <aside>
-          <img loading="lazy" src="/location.webp" alt="Noida Location Map" />
-        </aside> */}
-      </section>
+<section className="location" id="location">
+<iframe 
+// width="560" height="315" 
+src="https://www.youtube.com/embed/ZkcLjZjZpsA?si=MvcLyiOxFBlqeJOD" title="YouTube video player" frameBorder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+<iframe src="https://www.g0!3f0!3m2!1i1024!2i768!4f13.oogle.com/maps/embed?pb=!1m17!1m12!1m3!1d2769.083853753041!2d77.31503599999999!3d28.583195999999997!2m3!1f0!2f1!3m2!1m1!2zMjjCsDM0JzU5LjUiTiA3N8KwMTgnNTQuMSJF!5e1!3m2!1sen!2sin!4v1749557930913!5m2!1sen!2sin" 
+// width="600" height="450" style="border:0;" 
+allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+</section>
 
       <section className="contact" id="contact">
         <h3 className="contact-head"><i>Contact Us</i></h3>
@@ -311,10 +282,58 @@ function App() {
         </div>
       </section>
 
-      <footer className="footer">
+      {/* <footer className="footer">
         <p>Disclaimer - Authorized marketing partner with Smartbrickz. The content provided on this website is for informational purposes only and does not constitute an offer to avail any service...</p>
         <p>Disclaimer & Privacy Policy | Digital Media Planned By Digital Growth Experts</p>
-      </footer>
+      </footer> */}
+      <footer className="footer">
+      <div className="footer-container">
+
+        <div className="footer-section about">
+          <h3>About Smartbrickz</h3>
+          <p>
+            Authorized marketing partner with Smartbrickz. We provide the latest updates, insights, and offers to help you make informed decisions.
+          </p>
+        </div>
+
+        <div className="footer-section links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+            <li><a href="/disclaimer">Disclaimer & Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div className="footer-section contact">
+          <h3>Contact Info</h3>
+          <p>Email: <a href="mailto:info@smartbrickz.com">info@smartbrickz.com</a></p>
+          <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+          <p>Address: 123 Main St, City, Country</p>
+        </div>
+
+        <div className="footer-section social">
+          <h3>Follow Us</h3>
+          <div className="social-icons">
+            <a href="https://facebook.com/smartbrickz" target="_blank" rel="noopener noreferrer" aria-label="Facebook">📘</a>
+            <a href="https://twitter.com/smartbrickz" target="_blank" rel="noopener noreferrer" aria-label="Twitter">🐦</a>
+            <a href="https://instagram.com/smartbrickz" target="_blank" rel="noopener noreferrer" aria-label="Instagram">📸</a>
+            <a href="https://linkedin.com/company/smartbrickz" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">🔗</a>
+          </div>
+        </div>
+      </div>
+
+      <div className="footer-bottom">
+        <p>
+          Disclaimer - Authorized marketing partner with Smartbrickz. The content provided on this website is for informational purposes only and does not constitute an offer to avail any service.
+        </p>
+        <p>
+          Disclaimer & Privacy Policy | Digital Media Planned By <a href="https://digitalgrowthexperts.com" target="_blank" rel="noopener noreferrer">Digital Growth Experts</a>
+        </p>
+      </div>
+    </footer>
     </main>
   );
 }

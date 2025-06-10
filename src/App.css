@@ -47,7 +47,7 @@ button:hover {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: url("https://suryaahomes.in/images/mainn.png") no-repeat;
+  background: url("home.webp") no-repeat;
   background-size: cover;
   margin-bottom: 100px;
 }
@@ -281,10 +281,99 @@ button:hover {
   margin-bottom: 20px;
 }
 
-.footer {
+/* .footer {
   background-color: #0000004b;
   text-align: center;
   padding: 100px 30px;
+} */
+.footer {
+  background-color: #222;
+  color: #ccc;
+  padding: 40px 20px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  border-top: 1px solid #444;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto 30px;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 1 1 220px;
+  min-width: 200px;
+}
+
+.footer-section h3 {
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.footer-section p,
+.footer-section a,
+.footer-section li {
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: #66b2ff;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover,
+.footer-section a:focus {
+  color: #3399ff;
+  text-decoration: underline;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.social-icons a {
+  font-size: 24px;
+  margin-right: 15px;
+  display: inline-block;
+  transition: color 0.3s ease;
+  color: #66b2ff;
+  text-decoration: none;
+}
+
+.social-icons a:hover,
+.social-icons a:focus {
+  color: #3399ff;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #444;
+  padding-top: 15px;
+  font-size: 12px;
+  color: #888;
+}
+
+.footer-bottom a {
+  color: #66b2ff;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover,
+.footer-bottom a:focus {
+  text-decoration: underline;
 }
 
 h3 {
@@ -339,5 +428,12 @@ h2 {
   }
   .contact-a {
     max-width: 90%;
+  }
+  .footer-container {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .footer-section {
+    min-width: 100%;
   }
 }
