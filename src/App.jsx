@@ -6,6 +6,8 @@ import Form from './components/Form';
 import PriceCard from './components/PriceCard';
 
 function App() {
+  const lat = 28.583196;
+  const lng = 77.315036;
   const [popupActive, setPopupActive] = useState(false);
   const [isdownload, setIsdownload] = useState(false);
   const Download_Brochure = () => {
@@ -252,8 +254,27 @@ function App() {
       </section>
 
       <section className="location" id="location">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/JgDNFQ2RaLQ?autoplay=1&mute=1" frameborder="0" allow="autoplay; encrypted-media" loading="lazy"allowFullScreen></iframe>
-             
+            <iframe
+        // width="560"
+        // height="315"
+        src="https://www.youtube.com/embed/JgDNFQ2RaLQ?autoplay=0&mute=1"
+        title="YouTube video player"
+        frameBorder="0"
+        allow="autoplay; encrypted-media"
+        loading="lazy"
+        allowFullScreen
+      ></iframe>
+        <iframe
+        title="Google Map"
+        src={ `https://www.google.com/maps?q=${lat},${lng}&z=15&output=embed`}
+        // width="90%"
+        // height="100%"
+        // style={{ border: 0 }}
+        allowFullScreen=""
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      ></iframe>
+
 
         {/* <article>
           <h3><i>Location Highlights</i></h3>
