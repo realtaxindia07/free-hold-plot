@@ -257,9 +257,9 @@ function App() {
 // width="560" height="315" 
 src="https://www.youtube.com/embed/ZkcLjZjZpsA?si=MvcLyiOxFBlqeJOD" title="YouTube video player" frameBorder="0" 
 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-<iframe src="https://www.g0!3f0!3m2!1i1024!2i768!4f13.oogle.com/maps/embed?pb=!1m17!1m12!1m3!1d2769.083853753041!2d77.31503599999999!3d28.583195999999997!2m3!1f0!2f1!3m2!1m1!2zMjjCsDM0JzU5LjUiTiA3N8KwMTgnNTQuMSJF!5e1!3m2!1sen!2sin!4v1749557930913!5m2!1sen!2sin" 
-// width="600" height="450" style="border:0;" 
-allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d692.2708174538956!2d77.31443426950163!3d28.58321817613625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDM0JzU5LjYiTiA3N8KwMTgnNTQuMyJF!5e1!3m2!1sen!2sin!4v1749618312038!5m2!1sen!2sin" 
+// width="600" height="450" style="border:0;"
+ allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
 </section>
 
       <section className="contact" id="contact">
