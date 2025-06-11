@@ -47,7 +47,7 @@ button:hover {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: url("/frontend/public/home.webp") no-repeat;
+  background: url("../public/home.webp") no-repeat;
   background-size: cover;
   margin-bottom: 100px;
 }
